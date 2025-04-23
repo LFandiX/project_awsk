@@ -3,7 +3,7 @@ import mysql.connector
 # Koneksi ke database
 def connect_db():
     return mysql.connector.connect(
-        host="alfandi-db.cluster-cdm4ewgaio3j.us-east-1.rds.amazonaws.com",
+        host="rentaldb.cdm4ewgaio3j.us-east-1.rds.amazonaws.com",
         user="admin",
         password="FNDDatabase.1",
         database="rental_mobil"
@@ -11,7 +11,7 @@ def connect_db():
 
 # Membuat database dan tabel jika belum ada
 def setup_database():
-    conn = mysql.connector.connect(host="alfandi-db.cluster-cdm4ewgaio3j.us-east-1.rds.amazonaws.com", user="admin", password="FNDDatabase.1")
+    conn = mysql.connector.connect(host="rentaldb.cdm4ewgaio3j.us-east-1.rds.amazonaws.com", user="admin", password="FNDDatabase.1")
     cursor = conn.cursor()
     # cursor.execute("Drop DATABASE rental_mobil")
     cursor.execute("CREATE DATABASE IF NOT EXISTS rental_mobil")
