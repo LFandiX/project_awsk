@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 app.config["MYSQL_USER"] = "admin"
 app.config["MYSQL_PASSWORD"] = "FNDDatabase.1"
-app.config["MYSQL_HOST"] = "alfandi-db.cluster-cdm4ewgaio3j.us-east-1.rds.amazonaws.com"
+app.config["MYSQL_HOST"] = "rentaldb.cdm4ewgaio3j.us-east-1.rds.amazonaws.comm"
 app.config["MYSQL_DB"] = "rental_mobil"
 app.config["MYSQL_CURSORCLASS"] = "DictCursor"
 app.secret_key = "secret"
